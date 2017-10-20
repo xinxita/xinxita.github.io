@@ -106,21 +106,26 @@
 		</nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/801a7049008983.58a83de93d03d.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Hexo使用方法</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/7cd6bc49008983.58a83de93a00e.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >域名绑定</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/08f1a457579679.59dcfd1608c9f.png" alt=""><br>由于机缘巧合，最近上网看到一个博主的个人博客网站，它非常好。引起我也想搭建一个网站的兴趣。对网站有些许了解的我最终找到这个网站的核心：hexo框架。<br>经过不断的煎熬，我也终于搭建完成属于我自己的个人博客，博客地址：jiluolao.xyz<br>下面是我对hexo在 Windows电脑上 搭建方法的总结，写的不好还请见谅，欢迎大家指正修改。</p>
-<h2 id="什么是hexo？"><a href="#什么是hexo？" class="headerlink" title="什么是hexo？"></a>什么是hexo？</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
-<ul>
-<li>Node.js</li>
-<li>Git<br>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。（这里我的是直接用电脑的cmd命令提示符安装hexo的，因为我已经安装上述两个程序，但是npm单独打不开，所有不得已而为之）</li>
+                <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>因为使用Hexo搭建个人博客是托管在github之上，每次访问都要使用<a href="xinxita.github.io">xinxita.github.io</a>这个域名，要是想别人在其它设备上访问自己的博客，这个域名别人记得很麻烦也很难记得了，因此一个常用格式.com或.cn等域名，就有利于别人的访问。通过查阅hexo官方文档发现，github pages是支持域名绑定的。</p>
+<h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p>国内国外有很多的域名供应商，选择一个好的机构购买域名，会为自己的站点配置节约很多时间，也不会因为域名的出错，导致影响百度对我们个人博客的收录。近几年来，国内做的比较好的域名供应商有阿里云的万网。我就是在阿里云的万网购买的域名jiluolao.com(现在买.com域名会免费送.xyz域名一年)我现在使用的是jiluolao.xyz搭建我的博客。<br><img src="http://oy0mgcj39.bkt.clouddn.com/p2.PNG" alt=""><br>个人建议如果只是作为自己的博客使用建议不要购买.com的域名，应为.com域名审核比较慢也贵，推荐购买.top域名<br><img src="http://oy0mgcj39.bkt.clouddn.com/p1.PNG" alt=""><br>.top域名首年3块钱，新注账号十年的价格147。续费价格：16块/年。</p>
+<h2 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h2><ul>
+<li>登录进入万网的域名控制台，点击”域名和网站”中的”云DNS”</li>
+<li>点击对应域名的”解析”<br><img src="http://oy0mgcj39.bkt.clouddn.com/p3.PNG" alt=""></li>
+<li>按照顺序填入自己的信息</li>
 </ul>
-<h2 id="Node-js和Git的安装方法"><a href="#Node-js和Git的安装方法" class="headerlink" title="Node.js和Git的安装方法"></a>Node.js和Git的安装方法</h2><p>Node.js官网链接：<a href="http://nodejs.cn/" target="_blank" rel="external">点击</a><br>Git官网链接：<a href="https://git-scm.com/" target="_blank" rel="external">点击</a></p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。可以在电脑桌面点击右键弹窗中选择Git Bash Here<br>然后在弹窗中输入以下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli （$不用写，前面本来就有，没有也不用写，以后的也是。注意空格）</div></pre></td></tr></table></figure></p>
-<p>按回车键，然后等待。。。<br>测试看看有木有更新。。。</p>
+<p>点击添加解析，记录类型选A或CNAME，A记录的记录值就是ip地址，github(官方文档)提供了两个IP地址，192.30.252.153和192.30.252.154，这两个IP地址为github的服务器地址，两个都要填上，解析记录设置两个@和www，线路就默认就行了，CNAME记录值填你的github博客网址。如我的是xinxita.github.io，具体可以看结果图。</p>
+<p>最后结果就是：<img src="http://oy0mgcj39.bkt.clouddn.com/p4.PNG" alt=""></p>
+<blockquote>
+<blockquote>
+<p><em>这些全部设置完成后，此时你并不能要申请的域名访问你的博客。接着你需要做的是在hexo根目录的source文件夹里创建CNAME文件，不带任何后缀，里面添加你的域名信息，如：jiluolao.xyz。实践证明如果此时你填写的是www.jiluolao.xyz那么以后你只能用www.jiluolao.xyz访问，而如果你填写的是jiluolao.xyz。那么用www.jiluolao.xyz和jiluolao.xyz访问都是可以访问的。</em><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+</blockquote>
+</blockquote>
+<p>发布之后即可使用新的域名访问你的博客，如果你还是访问不了，检查一下是否配置正确，确保正确无误之后可以稍等几分钟，因为阿里云跟GitHub之间有时差。也可能是浏览器缓存的问题，可以换一个浏览器访问看看。谢谢看官。。。</p>
 
             </div>
 
@@ -183,8 +188,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'jiluolao.xyz/2017/10/18/Hexo使用方法/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'jiluolao.xyz/2017/10/18/Hexo使用方法/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'jiluolao.xyz/2017/10/20/域名绑定/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'jiluolao.xyz/2017/10/20/域名绑定/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
